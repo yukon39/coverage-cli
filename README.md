@@ -5,6 +5,9 @@
 
 # Использование
 
+Для тех кому не терпится начать уже готов пайплайн Jenkins [`/examples/coverage.jenkinsfile`](examples/coverage.jenkinsfile).
+Надо просто указать свои значения в первой секции `environment`
+
 ## Запуск процедуры замера
 
 `coverage-cli start --infobase test_database --output coverage.csv`
@@ -29,7 +32,18 @@
 
 `coverage-cli convert --input coverage.csv --input coverage.json --sources ProjectName/src --format EDT`
 
-* Конвертация замеров для модулей конфигурации и модулей расширения поддерживается через конфигурационный файл (пример файла можно посмотреть в [`/examples`](examples)):
+* Конвертация замеров для модулей конфигурации и модулей расширения поддерживается через конфигурационный файл (пример файла можно посмотреть в [`/examples`](examples):
 
 `coverage-cli convert --input coverage.csv --input coverage.json --config coverage-conf.json`
 
+## Формирование списка строк требующих покрытия
+
+Эта команда дублирует функционал SonarQube 1C BSL Community Plugin. 
+
+Формирует список строк требующих покрытия. Пример:
+`coverage-cli lines --sources src/cf --output linesToCover.xml`
+
+## Объединение нескольких отчетов покрытия в один
+
+Объединяет несколько отчетов покрытия в каталоге (например сформированных командами `convert` и `lines`) в один. 
+`coverage-cli report --input coverageReports --output genericCoverage.xml`
