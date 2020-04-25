@@ -1,0 +1,163 @@
+pipeline {
+
+    agent { 
+        // Используйте свою метку для ноды. 
+        // На ноде должны быть установлены EDT и сканер для SonarQube
+        label 'edt' 
+    }
+    
+    environment {    
+        // Project specific
+        DebuggerURL   = 'http://localhost:1550'
+        InfobaseName  = 'coverage_test'
+        ClusterName   = 'localhost'
+        SourcesPath   = 'src/cf'
+        SourcesFormat = 'XML'
+        VBParams      = 'VBParams.json'
+
+        // Jenkins specific
+        sonarTool     = 'SonarQubeTool'
+        sonarInstance = 'SonarQubeServer'
+
+        // Different strokes for different folks
+        CoverageTemp = '.coverage'
+    }
+
+    stages {
+
+        stage('Подготовка рабочей области') {
+            steps {
+                dir(CoverageTemp) { deleteDir() }
+                writeFile file: "${CoverageTemp}/dummy", text: 'dummy'
+                writeFile file: "${CoverageTemp}/coverage/dummy", text: 'dummy'
+            }
+        }
+
+        stage('Запуск сбора покрытия') {
+            environment {
+                commandArgs = [
+                        "--infobase ${InfobaseName}",
+                        "--debugger ${DebuggerURL}",
+                        "--output ${CoverageTemp}/coverage.csv"
+                    ].join(' ')
+            }
+            
+            steps {
+                coverage_cli("start", commandArgs)
+            }
+
+            post {
+                success {
+                    sleep time: 15, unit: 'SECONDS'
+                }
+            }
+        }
+
+        stage('Тестирование проекта') {
+            environment {
+                commandArgs = [
+                        "--ibconnection ${ibconnection()}",
+                        "--vanessasettings ${VBParams}",
+                        "--additional \"/DEBUG -http -attach /DEBUGGERURL ${DebuggerURL}\""
+                    ].join(' ')
+            }
+
+            steps {
+                catchError(buildResult: 'UNSTABLE', stageResult: 'FAILURE') {
+                    vrunner('vanessa', commandArgs)
+                }
+            }
+        }
+
+        stage('Остановка сбора покрытия') {
+            steps {
+                coverage_cli("stop", "")
+            }
+        }
+
+        stage('Разбор результатов покрытия') {
+            environment {
+                commandArgs = [
+                        "--input ${CoverageTemp}/coverage.csv",
+                        "--output ${CoverageTemp}/coverage/coverageTrue.json",
+                        "--sources ${SourcesPath}",
+                        "--format ${SourcesFormat}"
+                    ].join(' ')   
+            }
+
+            steps {
+                coverage_cli("convert", commandArgs)
+            }
+        }
+        
+        // Если используется community плагин для SonarQube, то этот шаг можно отключить,
+        // т.к. плагин самостоятельно реализует формирование строк покрытия
+        // с использованием опции sonar.bsl.calculateLineCover=true
+        stage('Получение строк для покрытия') {
+            
+            environment {
+                commandArgs = [  
+                        "--sources ${SourcesPath}",
+                        "--output ${CoverageTemp}/coverage/coverageFalse.xml"    
+                    ].join(' ')   
+            }  
+
+            steps {
+                coverage_cli("lines", commandArgs)
+            }
+        }
+
+        stage('Формирование genericCoverage') {
+            environment {
+                commandArgs = [  
+                        "--input ${CoverageTemp}/coverage",
+                        "--output ${CoverageTemp}/genericCoverage.xml"    
+                    ].join(' ')   
+            }  
+                                    
+            steps {
+                coverage_cli("report", commandArgs)
+            }
+        }
+
+        stage ('Запуск проверки SQ') {
+            environment {
+                scannerHome = tool sonarTool
+                SONAR_SCANNER_OPTS = [
+                        '-XX:+UseG1GC',
+                        '-XX:MaxGCPauseMillis=200',
+                        '-Dfile.encoding=UTF-8'
+                    ].join(' ')
+
+                commandArgs = [  
+                        "-Dsonar.coverageReportPaths=${CoverageTemp}/genericCoverage.xml"
+                    ].join(' ')     
+            }
+
+            steps {
+                withSonarQubeEnv(installationName: sonarInstance) {
+                    sonar_scanner(scannerHome, commandArgs)
+                }
+            }    
+        }
+    }
+}
+
+def ibconnection() {
+    "/S${ClusterName}/${InfobaseName}"
+}
+
+def coverage_cli(command, commandArgs) {
+    echo "coverage-cli ${command} ${commandArgs}"
+    bat "@chcp 65001 >nul\n@coverage-cli ${command} ${commandArgs}"
+}
+
+def sonar_scanner(scannerHome, commandArgs) {
+    echo "sonar-scanner.bat ${commandArgs}"
+    bat "@chcp 65001 >nul\n@\"${scannerHome}/bin/sonar-scanner.bat\" ${commandArgs}"   
+}
+
+def vrunner(command, commandArgs) {
+    echo "vrunner ${command} ${commandArgs}"
+    bat "@chcp 65001 >nul\n@vrunner ${command} ${commandArgs}"
+}
