@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.7">
+	<ConfigVersions>
+		<Metadata name="Catalog.Справочник1" id="3bf89955-e598-45e7-aabf-9a7f63a888b1" configVersion="f5ad366cd4da4848afb32857b2d60dd900000000"/>
+		<Metadata name="Catalog.Справочник1.ManagerModule" id="3bf89955-e598-45e7-aabf-9a7f63a888b1.3" configVersion="d9788bd4345ae74f9a8bea95aeba6ed600000000"/>
+		<Metadata name="Catalog.Справочник1.ObjectModule" id="3bf89955-e598-45e7-aabf-9a7f63a888b1.0" configVersion="67e1c0220e6b6b45b0235f5ba81f0d3500000000"/>
+		<Metadata name="CommonModule.ОбщийМодульВызовСервера" id="52895f8c-2982-4f1d-bfb0-75b3dd5db3d3" configVersion="95e5c1803ee06e4f90c8738c224dc24b00000000"/>
+		<Metadata name="CommonModule.ОбщийМодульВызовСервера.Module" id="52895f8c-2982-4f1d-bfb0-75b3dd5db3d3.0" configVersion="1301f360a7e0a141b19131332f521f4e00000000"/>
+		<Metadata name="CommonModule.ОбщийМодульКлиент" id="72b7908b-2127-4ebb-9ddd-216e1eda6eb4" configVersion="e6c8679c21d59442b2af3459e13a196400000000"/>
+		<Metadata name="CommonModule.ОбщийМодульКлиент.Module" id="72b7908b-2127-4ebb-9ddd-216e1eda6eb4.0" configVersion="18f6e18017cbd244b5bf6e3d3ad6734200000000"/>
+		<Metadata name="CommonModule.ОбщийМодульСервер" id="1467e4fa-d3fe-44da-b03a-312f24b338e0" configVersion="28765f94b1830d4ab2e6cfc7f81f7a0700000000"/>
+		<Metadata name="CommonModule.ОбщийМодульСервер.Module" id="1467e4fa-d3fe-44da-b03a-312f24b338e0.0" configVersion="e29c2514a7b38446b71f86a417e7b0e200000000"/>
+		<Metadata name="Configuration.Конфигурация" id="de7b6e19-305b-4dc7-b761-9762afaadae2" configVersion="19066d8ffe352848bc1ddfcf36a6bfa400000000"/>
+		<Metadata name="Configuration.Конфигурация.ManagedApplicationModule" id="3c3350a2-6ab5-4749-9ed5-1a1d6ae3df43.6" configVersion="1234d0e5f636ca41bd133da15b32cd2d00000000"/>
+		<Metadata name="DataProcessor.Обработка1" id="f8a46f0f-16e8-4373-bf4e-c2dd13728eb0" configVersion="db31dcdcf5d7cb489937f53b8e313fe300000000"/>
+		<Metadata name="DataProcessor.Обработка1.ManagerModule" id="f8a46f0f-16e8-4373-bf4e-c2dd13728eb0.2" configVersion="0285cbf02611624482ca80f03e779ab000000000"/>
+		<Metadata name="DataProcessor.Обработка1.ObjectModule" id="f8a46f0f-16e8-4373-bf4e-c2dd13728eb0.0" configVersion="34e8f1547f01d0409c054ef19ace137600000000"/>
+		<Metadata name="Document.Документ1" id="258e0f88-cfd2-42e0-b7ea-4998cddae1e1" configVersion="e4dbc219048fbc47bc2146813c63512200000000"/>
+		<Metadata name="Document.Документ1.ManagerModule" id="258e0f88-cfd2-42e0-b7ea-4998cddae1e1.2" configVersion="21c3593c6b5da642ac43466fd636478000000000"/>
+		<Metadata name="Document.Документ1.ObjectModule" id="258e0f88-cfd2-42e0-b7ea-4998cddae1e1.0" configVersion="801e945f163ed5438ac83fe1765661ae00000000"/>
+		<Metadata name="ExchangePlan.ПланОбмена1" id="0e82e1c5-828d-46af-a9c2-5edc838bdc9a" configVersion="ff450f766edde54b9eb080e01f20ffea00000000"/>
+		<Metadata name="ExchangePlan.ПланОбмена1.ObjectModule" id="0e82e1c5-828d-46af-a9c2-5edc838bdc9a.2" configVersion="cdd24c862ba23b45a3ed2179638cf71100000000"/>
+		<Metadata name="InformationRegister.РегистрСведений1" id="923d1448-436c-4d3d-b835-17210184b0a4" configVersion="fd7fd4822e9546488c8d301b40027a8000000000">
+			<Metadata name="InformationRegister.РегистрСведений1.Dimension.Измерение1" id="2d89ed16-47c3-4473-9787-4c3852de629e"/>
+		</Metadata>
+		<Metadata name="InformationRegister.РегистрСведений1.ManagerModule" id="923d1448-436c-4d3d-b835-17210184b0a4.2" configVersion="7b0e3c3bacd00e498b67554e48977bfe00000000"/>
+		<Metadata name="InformationRegister.РегистрСведений1.RecordSetModule" id="923d1448-436c-4d3d-b835-17210184b0a4.1" configVersion="3c32d5545f7d714a873250721e134b6500000000"/>
+		<Metadata name="Language.Русский" id="9307e99e-a40f-4221-b2f3-b10a959f7e8e" configVersion="5d01bcdac9dc3c4ba613845daff54ed500000000"/>
+		<Metadata name="Report.Отчет1" id="c32fa553-5d6f-4821-82f5-d5e093946c70" configVersion="b3c4ef56fc53d34fa4120830c731986800000000"/>
+		<Metadata name="Report.Отчет1.ManagerModule" id="c32fa553-5d6f-4821-82f5-d5e093946c70.2" configVersion="fa92c9395447574eb7994347d977ea1d00000000"/>
+		<Metadata name="Report.Отчет1.ObjectModule" id="c32fa553-5d6f-4821-82f5-d5e093946c70.0" configVersion="fab82206ee65b948812a96a8e8dcfdb900000000"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
