@@ -29,7 +29,6 @@ pipeline {
             steps {
                 dir(CoverageTemp) { deleteDir() }
                 writeFile file: "${CoverageTemp}/dummy", text: 'dummy'
-                writeFile file: "${CoverageTemp}/coverage/dummy", text: 'dummy'
             }
         }
 
@@ -79,7 +78,7 @@ pipeline {
             environment {
                 commandArgs = [
                         "--input ${CoverageTemp}/coverage.csv",
-                        "--output ${CoverageTemp}/coverage/coverageTrue.json",
+                        "--output ${CoverageTemp}/coveredLines.xml",
                         "--sources ${SourcesPath}",
                         "--format ${SourcesFormat}"
                     ].join(' ')   
@@ -98,25 +97,12 @@ pipeline {
             environment {
                 commandArgs = [  
                         "--sources ${SourcesPath}",
-                        "--output ${CoverageTemp}/coverage/coverageFalse.xml"    
+                        "--output ${CoverageTemp}/linesToCover.xml"    
                     ].join(' ')   
             }  
 
             steps {
                 coverage_cli("lines", commandArgs)
-            }
-        }
-
-        stage('Формирование genericCoverage') {
-            environment {
-                commandArgs = [  
-                        "--input ${CoverageTemp}/coverage",
-                        "--output ${CoverageTemp}/genericCoverage.xml"    
-                    ].join(' ')   
-            }  
-                                    
-            steps {
-                coverage_cli("report", commandArgs)
             }
         }
 
@@ -129,8 +115,13 @@ pipeline {
                         '-Dfile.encoding=UTF-8'
                     ].join(' ')
 
+                coverageReportPaths = [
+                    "${CoverageTemp}/coveredLines.xml",
+                    "${CoverageTemp}/linesToCover.xml"
+                ].join(',')
+                
                 commandArgs = [  
-                        "-Dsonar.coverageReportPaths=${CoverageTemp}/genericCoverage.xml"
+                        "-Dsonar.coverageReportPaths=${coverageReportPaths}"
                     ].join(' ')     
             }
 
