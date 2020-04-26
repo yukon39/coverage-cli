@@ -1,0 +1,6 @@
+* text=auto
+
+*.os text
+*.bsl text
+*.xml text
+*.mdo text
