@@ -25,12 +25,27 @@
     </synonym>
     <languageCode>ru</languageCode>
   </languages>
+  <filterCriteria>FilterCriterion.КритерийОтбора1</filterCriteria>
   <commonModules>CommonModule.ОбщийМодульКлиент</commonModules>
   <commonModules>CommonModule.ОбщийМодульВызовСервера</commonModules>
   <commonModules>CommonModule.ОбщийМодульСервер</commonModules>
   <exchangePlans>ExchangePlan.ПланОбмена1</exchangePlans>
+  <settingsStorages>SettingsStorage.ХранилищеНастроек1</settingsStorages>
+  <constants>Constant.Константа1</constants>
   <catalogs>Catalog.Справочник1</catalogs>
   <documents>Document.Документ1</documents>
+  <sequences>Sequence.Последовательность1</sequences>
+  <documentJournals>DocumentJournal.ЖурналДокументов1</documentJournals>
+  <enums>Enum.Перечисление1</enums>
+  <reports>Report.Отчет1</reports>
   <dataProcessors>DataProcessor.Обработка1</dataProcessors>
   <informationRegisters>InformationRegister.РегистрСведений1</informationRegisters>
+  <accumulationRegisters>AccumulationRegister.РегистрНакопления1</accumulationRegisters>
+  <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ПланВидовХарактеристик1</chartsOfCharacteristicTypes>
+  <chartsOfAccounts>ChartOfAccounts.ПланСчетов1</chartsOfAccounts>
+  <accountingRegisters>AccountingRegister.РегистрБухгалтерии1</accountingRegisters>
+  <chartsOfCalculationTypes>ChartOfCalculationTypes.ПланВидовРасчета1</chartsOfCalculationTypes>
+  <calculationRegisters>CalculationRegister.РегистрРасчета1</calculationRegisters>
+  <businessProcesses>BusinessProcess.БизнесПроцесс1</businessProcesses>
+  <tasks>Task.Задача1</tasks>
 </mdclass:Configuration>

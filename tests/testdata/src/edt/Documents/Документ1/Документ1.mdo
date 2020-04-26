@@ -19,6 +19,9 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.РегистрНакопления1</registerRecords>
+  <registerRecords>AccountingRegister.РегистрБухгалтерии1</registerRecords>
+  <registerRecords>CalculationRegister.РегистрРасчета1</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
 </mdclass:Document>
