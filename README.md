@@ -18,23 +18,25 @@
 
 ## Конвертация замеров во внутренний формат
 
-Конвертирует результаты покрытия из CSV формата во внутренний JSON формат. При этом:
+Конвертирует результаты покрытия из CSV формата во genericCoverage XML формат. При этом:
 1. Сопоставляются внутренние идентификаторы программных модулей и файлы с исходными кодами проекта
 2. Устраняется дублирование номеров строк в замерах.
 3. Убираются замеры программных модулей для которых не найдены соответсвующие файлы с исходными кодами.
 
+При указании опции `--json` отчет сохраняется во внутреннем JSON-формате, содержащем более подробную информацию о модулях.
+
 Примеры:
 * Конвертация замеров для модулей конфигурации в формате выгрузки конфигуратора:
 
-`coverage-cli convert --input coverage.csv --output coverage.json --sources src/cf --format XML`
+`coverage-cli convert --input coverage.csv --output coveredLines.xml --sources src/cf --format XML`
 
 * Конвертация замеров для модулей конфигурации в формате выгрузки EDT:
 
-`coverage-cli convert --input coverage.csv --output coverage.json --sources ProjectName/src --format EDT`
+`coverage-cli convert --input coverage.csv --output coveredLines.xml --sources ProjectName/src --format EDT`
 
 * Конвертация замеров для модулей конфигурации и модулей расширения поддерживается через конфигурационный файл (пример файла можно посмотреть в [`/examples`](examples):
 
-`coverage-cli convert --input coverage.csv --input coverage.json --config coverage-conf.json`
+`coverage-cli convert --input coverage.csv --input coveredLines.xml --config coverage-conf.json`
 
 ## Формирование списка строк требующих покрытия
 
