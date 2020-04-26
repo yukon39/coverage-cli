@@ -79,7 +79,7 @@ pipeline {
             environment {
                 commandArgs = [
                         "--input ${CoverageTemp}/coverage.csv",
-                        "--output ${CoverageTemp}/coverage/coverageTrue.json",
+                        "--output ${CoverageTemp}/coverage/coverageTrue.xml",
                         "--sources ${SourcesPath}",
                         "--format ${SourcesFormat}"
                     ].join(' ')   
