@@ -26,11 +26,11 @@
 Примеры:
 * Конвертация замеров для модулей конфигурации в формате выгрузки конфигуратора:
 
-`coverage-cli convert --input coverage.csv --input coverage.json --sources src/cf --format XML`
+`coverage-cli convert --input coverage.csv --output coverage.json --sources src/cf --format XML`
 
 * Конвертация замеров для модулей конфигурации в формате выгрузки EDT:
 
-`coverage-cli convert --input coverage.csv --input coverage.json --sources ProjectName/src --format EDT`
+`coverage-cli convert --input coverage.csv --output coverage.json --sources ProjectName/src --format EDT`
 
 * Конвертация замеров для модулей конфигурации и модулей расширения поддерживается через конфигурационный файл (пример файла можно посмотреть в [`/examples`](examples):
 
