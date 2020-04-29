@@ -23,4 +23,24 @@
   <autonumbering>true</autonumbering>
   <task>Task.Задача1</task>
   <createTaskInPrivilegedMode>true</createTaskInPrivilegedMode>
+  <forms uuid="b9a7ffa4-168f-4af2-a416-65a82e3ce3c9">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="66a0908d-9e0b-4f56-9610-6036a95e882a">
+    <name>Команда1</name>
+    <synonym>
+      <key>ru</key>
+      <value>БизнесПроцесс</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
 </mdclass:BusinessProcess>

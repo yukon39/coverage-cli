@@ -76,8 +76,10 @@
 			<AuxiliaryListForm/>
 			<AuxiliaryChoiceForm/>
 			<BasedOn/>
-			<DependenceOnCalculationTypes>DontUse</DependenceOnCalculationTypes>
-			<BaseCalculationTypes/>
+			<DependenceOnCalculationTypes>OnActionPeriod</DependenceOnCalculationTypes>
+			<BaseCalculationTypes>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCalculationTypes.ПланВидовРасчета1</xr:Item>
+			</BaseCalculationTypes>
 			<ActionPeriodUse>false</ActionPeriodUse>
 			<Characteristics/>
 			<PredefinedDataUpdate>Auto</PredefinedDataUpdate>
@@ -92,6 +94,28 @@
 			<Explanation/>
 			<DataHistory>DontUse</DataHistory>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Command uuid="84a9292c-455e-44fa-b9a3-d806d9be2621">
+				<Properties>
+					<Name>Команда1</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПланВидовРасчета</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>ActionsPanelTools</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
+		</ChildObjects>
 	</ChartOfCalculationTypes>
 </MetaDataObject>

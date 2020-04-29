@@ -139,7 +139,9 @@
 			<CommonModule>ОбщийМодульСервер</CommonModule>
 			<ExchangePlan>ПланОбмена1</ExchangePlan>
 			<SettingsStorage>ХранилищеНастроек1</SettingsStorage>
+			<CommonCommand>ОбщаяКоманда1</CommonCommand>
 			<Constant>Константа1</Constant>
+			<CommonForm>Форма</CommonForm>
 			<Catalog>Справочник1</Catalog>
 			<Document>Документ1</Document>
 			<Sequence>Последовательность1</Sequence>

@@ -14,4 +14,33 @@
   <periodicity>Month</periodicity>
   <chartOfCalculationTypes>ChartOfCalculationTypes.ПланВидовРасчета1</chartOfCalculationTypes>
   <dataLockControlMode>Managed</dataLockControlMode>
+  <recalculations uuid="3d66b766-54c8-423d-887d-6670cfc1b8cc">
+    <producedTypes>
+      <recordType typeId="6ba7bfa7-0e46-40ca-a8d8-af762f4429a0" valueTypeId="d0771932-6cd6-4d9c-a355-c1195b4abd06"/>
+      <managerType typeId="545cc23c-dff6-41a4-aac6-440c6f8b1582" valueTypeId="b498fcf4-7abb-4b70-a685-c4460270318c"/>
+      <recordSetType typeId="d9825b8a-4ea5-4584-8fd0-8a7c1256cfc5" valueTypeId="28ec5b9f-a764-4050-a364-ee1d7011b745"/>
+    </producedTypes>
+    <name>Перерасчет1</name>
+    <dataLockControlMode>Managed</dataLockControlMode>
+  </recalculations>
+  <forms uuid="4404cd81-7559-48e1-ad7b-3d32f7bb1951">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="16bedcfe-b4b3-41a5-827f-bc9d11be683e">
+    <name>Команда1</name>
+    <synonym>
+      <key>ru</key>
+      <value>РегистрРасчета</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
 </mdclass:CalculationRegister>
