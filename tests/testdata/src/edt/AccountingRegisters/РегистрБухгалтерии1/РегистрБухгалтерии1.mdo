@@ -27,4 +27,24 @@
     <fullTextSearch>Use</fullTextSearch>
     <balance>true</balance>
   </resources>
+  <forms uuid="2ce1d363-f445-4db6-b7b7-998e41073ca5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="5f73ab1d-8248-4032-a2ad-f422a92cca3c">
+    <name>Команда1</name>
+    <synonym>
+      <key>ru</key>
+      <value>РегистрБухгалтерии</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
 </mdclass:AccountingRegister>

@@ -31,7 +31,9 @@
   <commonModules>CommonModule.ОбщийМодульСервер</commonModules>
   <exchangePlans>ExchangePlan.ПланОбмена1</exchangePlans>
   <settingsStorages>SettingsStorage.ХранилищеНастроек1</settingsStorages>
+  <commonCommands>CommonCommand.ОбщаяКоманда1</commonCommands>
   <constants>Constant.Константа1</constants>
+  <commonForms>CommonForm.Форма</commonForms>
   <catalogs>Catalog.Справочник1</catalogs>
   <documents>Document.Документ1</documents>
   <sequences>Sequence.Последовательность1</sequences>

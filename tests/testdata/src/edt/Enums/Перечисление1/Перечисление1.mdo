@@ -8,4 +8,24 @@
   <name>Перечисление1</name>
   <quickChoice>true</quickChoice>
   <choiceMode>BothWays</choiceMode>
+  <forms uuid="4130a6f0-4c97-4ba5-be76-a70e86dbd569">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="24553351-651a-49f4-ac17-463661961fb0">
+    <name>Команда1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перечисление</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
 </mdclass:Enum>

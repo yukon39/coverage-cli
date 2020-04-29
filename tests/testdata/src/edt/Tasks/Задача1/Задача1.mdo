@@ -24,4 +24,24 @@
   <descriptionLength>25</descriptionLength>
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
+  <forms uuid="0fcc2b09-6188-4573-843d-41e906660823">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="9ac5afa1-99da-4ffe-93cc-c237f76e5f32">
+    <name>Команда1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
 </mdclass:Task>

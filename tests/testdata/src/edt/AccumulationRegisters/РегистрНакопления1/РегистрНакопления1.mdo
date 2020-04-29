@@ -24,4 +24,24 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
+  <forms uuid="226f2e9e-d260-43ed-86f7-8065e01f3b31">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="2d1bc054-1e88-49d9-b0e1-2a160e690652">
+    <name>Команда1</name>
+    <synonym>
+      <key>ru</key>
+      <value>РегистрНакопления</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
 </mdclass:AccumulationRegister>

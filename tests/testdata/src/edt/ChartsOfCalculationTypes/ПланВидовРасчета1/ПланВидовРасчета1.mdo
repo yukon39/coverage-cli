@@ -28,4 +28,26 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <dependenceOnCalculationTypes>OnActionPeriod</dependenceOnCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ПланВидовРасчета1</baseCalculationTypes>
+  <forms uuid="5d51a22b-7208-4fb0-9196-b3c028523c48">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="84a9292c-455e-44fa-b9a3-d806d9be2621">
+    <name>Команда1</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПланВидовРасчета</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
 </mdclass:ChartOfCalculationTypes>
