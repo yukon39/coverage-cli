@@ -1,0 +1,7 @@
+{
+    "$schema": "https://raw.githubusercontent.com/yukon39/coverage-cli/master/api/convert-config-schema.json",
+    "Configuration": {
+        "SourcePath": "src/xml",
+        "SourceFormat": "XML"
+    }
+}
