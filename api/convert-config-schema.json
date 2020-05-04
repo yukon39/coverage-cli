@@ -1,0 +1,64 @@
+{
+    "definitions": {
+        "SourceFormats": {
+            "type": "string",
+            "default": "XML",
+            "enum": [
+                "XML",
+                "EDT"
+            ]
+        },
+        "Configuration": {
+            "type": "object",
+            "properties": {
+                "SourcePath": {
+                    "type": "string"
+                },
+                "SourceFormat": {
+                    "$ref": "#/definitions/SourceFormats"
+                }
+            },
+            "required": [
+                "SourcePath"
+            ],
+            "additionalProperties": false
+        },
+        "Extension": {
+            "type": "object",
+            "properties": {
+                "Name": {
+                    "type": "string"
+                },
+                "SourcePath": {
+                    "type": "string"
+                },
+                "SourceFormat": {
+                    "$ref": "#/definitions/SourceFormats"
+                }
+            },
+            "required": [
+                "Name",
+                "SourcePath"
+            ],
+            "additionalProperties": false
+        }
+    },
+    "type": "object",
+    "properties": {
+        "Configuration": {
+            "$ref": "#/definitions/Configuration"
+        },
+        "Extensions": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/Extension"
+            }
+        },
+        "ExternalReportsAndDataProcessors": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            }
+        }
+    }
+}

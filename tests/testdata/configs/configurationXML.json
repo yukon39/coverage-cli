@@ -1,0 +1,7 @@
+{
+    "$schema": "../../../api/convert-config-schema.json",
+    "Configuration": {
+        "SourcePath": "src/xml",
+        "SourceFormat": "XML"
+    }
+}

@@ -1,14 +1,15 @@
 {
-    "Конфигурация": {
-        "КаталогИсходныхФайлов": "src/cf",
-        "Формат": "XML"
+    "$schema": "https://raw.githubusercontent.com/yukon39/coverage-cli/master/api/convert-config-schema.json",
+    "Configuration": {
+        "SourcePath": "src/cf",
+        "SourceFormat": "XML"
     },
-    "Расширения": [
+    "Extensions": [
         {
-            "Имя": "ModuleTests",
-            "КаталогИсходныхФайлов": "ModuleTests/src",
-            "Формат": "EDT"
+            "Name": "ModuleTests",
+            "SourcePath": "ModuleTests/src",
+            "SourceFormat": "EDT"
         }
     ],
-    "ВнешниеОтчетыИОбработки": []
+    "ExternalReportsAndDataProcessors": []
 }
