@@ -52,6 +52,29 @@
 			<ExtendedListPresentation/>
 			<Explanation/>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Recalculation>Перерасчет1</Recalculation>
+			<Form>Форма</Form>
+			<Command uuid="16bedcfe-b4b3-41a5-827f-bc9d11be683e">
+				<Properties>
+					<Name>Команда1</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>РегистрРасчета</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>ActionsPanelTools</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
+		</ChildObjects>
 	</CalculationRegister>
 </MetaDataObject>

@@ -6,4 +6,24 @@
   </producedTypes>
   <name>Обработка1</name>
   <useStandardCommands>true</useStandardCommands>
+  <forms uuid="934b32ea-1a0a-4b47-b71b-f10246bea67c">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="2f511c22-b00e-4730-84eb-fe6f3c3976d9">
+    <name>Команда1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработка</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
 </mdclass:DataProcessor>

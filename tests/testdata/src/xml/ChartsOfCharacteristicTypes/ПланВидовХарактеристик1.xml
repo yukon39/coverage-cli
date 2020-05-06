@@ -85,6 +85,28 @@
 			<Explanation/>
 			<DataHistory>DontUse</DataHistory>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Command uuid="c26d2180-affb-4ef4-b5df-c6d820be061d">
+				<Properties>
+					<Name>Команда1</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПланВидовХарактеристик</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>ActionsPanelTools</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
+		</ChildObjects>
 	</ChartOfCharacteristicTypes>
 </MetaDataObject>

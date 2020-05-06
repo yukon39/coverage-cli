@@ -78,6 +78,28 @@
 			<ExtendedListPresentation/>
 			<Explanation/>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Command uuid="911a9cef-4849-462e-a7be-ed7fe3bb6bcc">
+				<Properties>
+					<Name>Команда1</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПланСчетов</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>ActionsPanelTools</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
+		</ChildObjects>
 	</ChartOfAccounts>
 </MetaDataObject>

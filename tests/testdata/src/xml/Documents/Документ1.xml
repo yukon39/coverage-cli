@@ -56,8 +56,8 @@
 			<RegisterRecordsWritingOnPost>WriteSelected</RegisterRecordsWritingOnPost>
 			<SequenceFilling>AutoFill</SequenceFilling>
 			<RegisterRecords>
-				<xr:Item xsi:type="xr:MDObjectRef">AccountingRegister.РегистрБухгалтерии1</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.РегистрНакопления1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccountingRegister.РегистрБухгалтерии1</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CalculationRegister.РегистрРасчета1</xr:Item>
 			</RegisterRecords>
 			<PostInPrivilegedMode>true</PostInPrivilegedMode>
@@ -74,6 +74,28 @@
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 			<DataHistory>DontUse</DataHistory>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Command uuid="a0b06c2a-fced-4b5a-b64c-2fc9dfa00653">
+				<Properties>
+					<Name>Команда1</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>ActionsPanelTools</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
+		</ChildObjects>
 	</Document>
 </MetaDataObject>

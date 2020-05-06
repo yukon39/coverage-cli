@@ -24,6 +24,28 @@
 			<ExtendedListPresentation/>
 			<Explanation/>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Command uuid="2834a667-29c2-4f4c-9393-88e4da34ee10">
+				<Properties>
+					<Name>Команда1</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>КритерийОтбора</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>ActionsPanelTools</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+				</Properties>
+			</Command>
+		</ChildObjects>
 	</FilterCriterion>
 </MetaDataObject>

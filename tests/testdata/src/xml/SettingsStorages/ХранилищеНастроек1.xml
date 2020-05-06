@@ -16,6 +16,8 @@
 			<AuxiliarySaveForm/>
 			<AuxiliaryLoadForm/>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Form>Форма</Form>
+		</ChildObjects>
 	</SettingsStorage>
 </MetaDataObject>

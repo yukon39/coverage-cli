@@ -7,4 +7,24 @@
   <name>КритерийОтбора1</name>
   <type/>
   <useStandardCommands>true</useStandardCommands>
+  <forms uuid="cd995a65-2174-4bf2-bdca-f642f8853bab">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="2834a667-29c2-4f4c-9393-88e4da34ee10">
+    <name>Команда1</name>
+    <synonym>
+      <key>ru</key>
+      <value>КритерийОтбора</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
 </mdclass:FilterCriterion>

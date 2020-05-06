@@ -25,4 +25,24 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
+  <forms uuid="7c278227-dd7d-4c99-894b-d6c0dd386102">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="999c8fe1-1c9f-4334-84f7-80b2355d3c07">
+    <name>Команда1</name>
+    <synonym>
+      <key>ru</key>
+      <value>РегистрСведений</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
 </mdclass:InformationRegister>

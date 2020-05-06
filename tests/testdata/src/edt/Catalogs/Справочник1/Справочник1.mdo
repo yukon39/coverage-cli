@@ -26,4 +26,24 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <forms uuid="6643f567-5b51-44f4-bb39-526a3f2b72a0">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="f558b7c6-3024-468e-b000-a510b3d1921e">
+    <name>Команда1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Справочник</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <shortcut></shortcut>
+  </commands>
 </mdclass:Catalog>
