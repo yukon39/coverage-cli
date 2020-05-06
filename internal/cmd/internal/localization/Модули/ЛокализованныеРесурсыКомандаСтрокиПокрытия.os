@@ -17,15 +17,18 @@
 #Область ЛокализованныеСтроки
 
 Функция ОписаниеОпцииФайлGenericCoverage()
-	Возврат НСтр("ru='Файл покрытия в формате genericCoverage';en='Coverage file format genericCoverage'");
+	Возврат НСтр("ru='Файл покрытия в формате genericCoverage';
+	|en='Coverage file format genericCoverage'");
 КонецФункции
 
 Функция ОписаниеОпцииКаталогПроекта()
-	Возврат НСтр("ru='Каталог проекта';en='Project path'");
+	Возврат НСтр("ru='Каталог проекта';
+	|en='Project path'");
 КонецФункции
 
 Функция ОписаниеОпцииКаталогИсходников()
-	Возврат НСтр("ru='Каталог исходных текстов конфигурации';en='Directory source configuration'");
+	Возврат НСтр("ru='Каталог исходных текстов конфигурации';
+	|en='Directory source configuration'");
 КонецФункции
 
 #КонецОбласти
