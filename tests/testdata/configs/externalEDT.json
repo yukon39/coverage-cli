@@ -1,0 +1,11 @@
+{
+    "$schema": "../../../api/convert-config-schema.json",
+    "ExternalReportsAndDataProcessors": [
+        {
+            "URL": "ВнешняяОбработка1.epf",
+            "URLType" : "file",
+            "SourcePath": "src/epf/edt",
+            "SourceFormat": "EDT"
+        }
+    ]
+}
