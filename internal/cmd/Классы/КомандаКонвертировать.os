@@ -1,5 +1,5 @@
 #Использовать configor
-#Использовать "../../converter"
+#Использовать "../../../pkg/converter"
 #Использовать "../internal/localization"
 
 Перем Лог;
