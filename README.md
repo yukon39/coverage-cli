@@ -7,6 +7,7 @@
 
 Для тех кому не терпится начать уже готов пайплайн Jenkins [`/examples/coverage.jenkinsfile`](examples/coverage.jenkinsfile).
 Надо просто указать свои значения в первой секции `environment`
+
 Для тех у кого нет Jenkins-а или кому тесны рамки консольного приложения все возможности пакета доступны через API. Смотри [`/examples/coverage.os`](examples/coverage.os). Все тоже самое, что в Jenkins, но через API.
 
 ## Запуск процедуры замера
