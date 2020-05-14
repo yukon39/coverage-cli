@@ -1,0 +1,10 @@
+{
+    "$schema": "../../../api/convert-config-schema.json",
+    "Extensions": [
+        {
+            "Name": "Расширение1",
+            "SourcePath": "src/cfe/xml",
+            "SourceFormat": "XML"
+        }
+    ]
+}

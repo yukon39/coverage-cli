@@ -41,6 +41,33 @@
                 "SourcePath"
             ],
             "additionalProperties": false
+        },
+        "ExternalReportOrDataProcessor": {
+            "type": "object",
+            "properties": {
+                "URL": {
+                    "type": "string"
+                },
+                "URLType": {
+                    "type": "string",
+                    "default": "file",
+                    "enum": [
+                        "file",
+                        "raw"
+                    ]
+                },
+                "SourcePath": {
+                    "type": "string"
+                },
+                "SourceFormat": {
+                    "$ref": "#/definitions/SourceFormats"
+                }
+            },
+            "required": [
+                "URL",
+                "SourcePath"
+            ],
+            "additionalProperties": false
         }
     },
     "type": "object",
@@ -57,7 +84,7 @@
         "ExternalReportsAndDataProcessors": {
             "type": "array",
             "items": {
-                "type": "object"
+                "$ref": "#/definitions/ExternalReportOrDataProcessor"
             }
         }
     }

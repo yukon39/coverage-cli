@@ -1,7 +1,7 @@
 {
     "$schema": "../../../api/convert-config-schema.json",
     "Configuration": {
-        "SourcePath": "src/xml",
+        "SourcePath": "src/cf/xml",
         "SourceFormat": "XML"
     }
 }

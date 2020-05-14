@@ -1,7 +1,7 @@
 {
     "$schema": "../../../api/convert-config-schema.json",
     "Configuration": {
-        "SourcePath": "src/edt",
+        "SourcePath": "src/cf/edt",
         "SourceFormat": "EDT"
     }
 }
