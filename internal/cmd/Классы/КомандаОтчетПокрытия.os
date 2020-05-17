@@ -1,5 +1,5 @@
 
-#Использовать "../../../pkg/coverage"
+#Использовать "../../coverage"
 #Использовать "../internal/localization"
 
 Перем Лог;
