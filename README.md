@@ -42,11 +42,6 @@
 
 ## 4 Формирование списка строк, требующих покрытия (необязательно)
 
-Эта команда дублирует функционал плагина "SonarQube 1C BSL Community Plugin" для сервера SonarQube. 
-
-И является необязательной, если на сервере SonarQube для анализируемого проекта уже включена настройка "BSL calculate lines to cover" в настройках "1C (BSL)"
-Подробнее см. [Документация SonarQube 1C (BSL) Community Plugin](https://1c-syntax.github.io/sonar-bsl-plugin-community/) - раздел "Расчет строк для покрытия тестами"
-
 Формирует список строк требующих покрытия. Пример:
 `coverage-cli lines --sources src/cf --output linesToCover.xml`
 
