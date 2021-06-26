@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<coverage version="1">
+    <file path="/38e352a5-9e82-4e60-9244-b81cc3eed67e/32e087ab-1491-49b6-aba7-43571b41ac2b">
+        <lineToCover covered="true" lineNumber="6"/>
+        <lineToCover covered="true" lineNumber="7"/>
+        <lineToCover covered="true" lineNumber="8"/>
+    </file>
+    <file path="/630ddfcc-52a6-4f8a-8eb9-417c5d39a7f1/a637f77f-3840-441d-a1c3-699c8c5cb7e0">
+        <lineToCover covered="true" lineNumber="5"/>
+        <lineToCover covered="true" lineNumber="6"/>
+    </file>
+</coverage>
