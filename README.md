@@ -42,8 +42,6 @@
 
 ## Формирование списка строк требующих покрытия
 
-Эта команда дублирует функционал SonarQube 1C BSL Community Plugin. 
-
 Формирует список строк требующих покрытия. Пример:
 `coverage-cli lines --sources src/cf --output linesToCover.xml`
 
