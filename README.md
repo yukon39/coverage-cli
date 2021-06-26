@@ -40,7 +40,7 @@
 
 `coverage-cli convert --input coverage.csv --input coveredLines.xml --config coverage-conf.json`
 
-## 4 Формирование списка строк, требующих покрытия (необязательно)
+## 4 Формирование списка строк, требующих покрытия
 
 Формирует список строк требующих покрытия. Пример:
 `coverage-cli lines --sources src/cf --output linesToCover.xml`
